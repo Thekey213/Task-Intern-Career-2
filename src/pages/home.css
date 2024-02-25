@@ -11,10 +11,6 @@
   
 
   
-  
-  
-  
-  
   * {
     margin: 0;
     padding: 0;
@@ -22,20 +18,7 @@
   }
   
   
-  
-  .back-video {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-  }
-  
-  .footer-color {
-    font-family: 'Roboto', sans-serif;
-    background-color: black;
-  }
-  
-  
+
   body{
     background-color: #FF66C4;
   }
@@ -71,18 +54,6 @@
     
   }
 
-  @keyframes rise {
-    from {
-      transform: translateY(100px); 
-      opacity: 0; 
-    }
-    to {
-      transform: translateY(0); 
-      opacity: 1;
-    }
-  }
-
-
   
   
   .hero-btn {
@@ -91,7 +62,7 @@
     background-color: white;
     text-align: center;
     text-decoration: none;
-    padding: 0.5rem;
+    padding-top: 1.5rem;
     margin-top: 1rem;
     border-radius: 5%;
     cursor: pointer;
