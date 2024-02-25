@@ -5,7 +5,7 @@ export default function Shop(){
 
     return(
         <>
-       <Link  to="/">SHOP NOW</Link>
+       <Link  to="/mintmade/">SHOP NOW</Link>
         </>
     );
 }
