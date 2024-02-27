@@ -1,28 +1,28 @@
-import React, { useContext } from "react";
-import { MyContext } from "../../context/mycontext";
 
-const Product = (props) => {
-  const { id, productName, price, productImage } = props.data;
-  const { addToCart, cartItems } = useContext(MyContext);
+import React from "react";
+import { useProductContext } from "../../context/ProductsContext";
 
-  const cartItemCount = cartItems[id];
+const Product = ({ product }) => {
+  const { cart, addToCart } = useProductContext();
 
-  const handleAddToCart = () => {
-    addToCart(id);
-  };
+  // Find the item in the cart
+  const itemInCart = cart.find((item) => item.id === product.id);
+
+  // Get the count of the item in the cart
+  const itemCount = itemInCart ? itemInCart.quantity : 0;
 
   return (
     <div className="product">
-      <img src={productImage} alt={productName} className="product-image" />
-      <div className="description">
-        <p className="product-name">
-          <b>{productName}</b>
-        </p>
-        <p className="product-price"> ${price}</p>
+      <img src={product.image} alt={product.name} />
+      <div className="product-info">
+        <h3>{product.name}</h3>
+        <p>{product.description}</p>
+        <p>Price: ${product.price}</p>
+        {/* Show the item count in the cart */}
+        <button onClick={() => addToCart(product)}>
+          Add to Cart {itemCount > 0 && `(${itemCount})`}
+        </button>
       </div>
-      <button className="addToCartButton" onClick={handleAddToCart}>
-        Add To Cart {cartItemCount > 0 && `(${cartItemCount})`}
-      </button>
     </div>
   );
 };
