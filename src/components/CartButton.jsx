@@ -16,9 +16,9 @@ const CartButton = () => {
              fontWeight: "bold",
              color: "black"
                  }} to="/cart">
+      {totalCount > 0 && <span>{totalCount}</span>} <br/>
       <FontAwesomeIcon icon={faShoppingCart} />
-      {/* Display the total count of items in the cart */}
-      {totalCount > 0 && <span>{totalCount}</span>}
+    
     </Link>
   );
 };
