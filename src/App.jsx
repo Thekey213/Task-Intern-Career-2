@@ -7,7 +7,7 @@ import Cart from "./pages/cart/Cart";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/mintmade">
       <ProductProvider>
         <Routes>
           <Route path="/" element={<Home />} />
