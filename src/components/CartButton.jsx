@@ -13,7 +13,8 @@ const CartButton = () => {
   return (
     <Link style={{
              textDecoration: "none",
-              fontWeight: "bold",
+             fontWeight: "bold",
+             color: "black"
                  }} to="/cart">
       <FontAwesomeIcon icon={faShoppingCart} />
       {/* Display the total count of items in the cart */}

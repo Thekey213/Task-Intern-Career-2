@@ -10,7 +10,7 @@ const App = () => {
     <BrowserRouter>
       <ProductProvider>
         <Routes>
-          <Route path="mintmade/" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/cart" element={<Cart />} />
         </Routes>

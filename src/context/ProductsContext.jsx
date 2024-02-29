@@ -1,4 +1,3 @@
-
 import React, { createContext, useState, useContext } from "react";
 
 const ProductContext = createContext();
@@ -29,9 +28,15 @@ export const ProductProvider = ({ children }) => {
     setCart(cart.filter((item) => item.id !== productId));
   };
 
+  const updateCartItemQuantity = (productId, newQuantity) => {
+    setCart(prevCart => prevCart.map(item =>
+      item.id === productId ? { ...item, quantity: newQuantity } : item
+    ));
+  };
+
   return (
     <ProductContext.Provider
-      value={{ products, setProducts, cart, addToCart, removeCartItem }}
+      value={{ products, setProducts, cart, addToCart, removeCartItem, updateCartItemQuantity }}
     >
       {children}
     </ProductContext.Provider>
