@@ -1,67 +1,97 @@
-import him3Image from "../src/assets/img/him3.jpg";
-import him4Image from "../src/assets/img/him4.jpg";
-import her2Image from "../src/assets/img/her2.jpg";
-import her1Image from "../src/assets/img/Her1.jpg";
-import him1Image from "../src/assets/img/him1.jpg";
-import accessories1Image from "../src/assets/img/accessories1.jpg";
-import accessories2Image from "../src/assets/img/accessories2.jpg";
+import hoodieImage from "../src/assets/img/hoodie.jpeg";
+import hoodie1Image from "../src/assets/img/hoodie1.jpeg";
+import hoodie2Image from "../src/assets/img/hoodie2.jpeg";
+import hoodie3Image from "../src/assets/img/hoodie3.jpeg";
+
+import dress1Image from "../src/assets/img/dress1.jpeg";
+import dress2Image from "../src/assets/img/dress2.jpeg";
+import dress3Image from "../src/assets/img/dress3.jpeg";
+import dress4Image from "../src/assets/img/dress4.jpeg";
+
+import shirt1Image from "../src/assets/img/shirt1.jpeg";
+import shirt2Image from "../src/assets/img/shirt2.jpeg";
+
 
 const products = [
   {
     id: 1,
-    name: "Men's Denim Jacket",
-    category: "Him",
+    name: "Hoodie",
+    category: "hoodie",
     price: 59.99,
-    image: him3Image,
+    image: hoodieImage,
     description: "Classic denim jacket for men, perfect for casual wear."
   },
   {
     id: 2,
-    name: "Men's Hooded Sweatshirt",
-    category: "Him",
+    name: "hoodie2",
+    category: "hoodie",
     price: 39.99,
-    image: him4Image,
+    image: hoodie1Image,
     description: "Comfortable hooded sweatshirt for men, ideal for chilly days."
   },
   {
     id: 3,
-    name: "Women's Floral Dress",
-    category: "Her",
-    price: 49.99,
-    image: her2Image,
-    description: "Elegant floral print dress for women, perfect for any occasion."
+    name: "hoodie2",
+    category: "hoodie",
+    price: 39.99,
+    image: hoodie2Image,
+    description: "Comfortable hooded sweatshirt for men, ideal for chilly days."
   },
   {
     id: 4,
-    name: "Women's Skinny Jeans",
-    category: "Her",
-    price: 34.99,
-    image: her1Image,
-    description: "Stylish skinny jeans for women, providing a flattering fit."
+    name: "hoodie2",
+    category: "hoodie",
+    price: 39.99,
+    image: hoodie3Image,
+    description: "Comfortable hooded sweatshirt for men, ideal for chilly days."
   },
   {
     id: 5,
-    name: "Men's Plaid Shirt",
-    category: "Him",
-    price: 44.99,
-    image: him1Image,
-    description: "Trendy plaid shirt for men, perfect for both casual and semi-formal occasions."
+    name: "dress1",
+    category: "dress",
+    price: 49.99,
+    image: dress1Image,
+    description: "Elegant floral print dress for women, perfect for any occasion."
   },
   {
     id: 6,
-    name: "Aviator Sunglasses",
-    category: "Accessories",
-    price: 14.99,
-    image: accessories1Image,
-    description: "Classic aviator sunglasses with UV protection, suitable for outdoor activities."
+    name: "dress2",
+    category: "dress",
+    price: 49.99,
+    image: dress2Image,
+    description: "Elegant floral print dress for women, perfect for any occasion."
   },
   {
-    id:7,
-    name: "Men's Cargo Shorts",
-    category: "Him",
-    price: 29.99,
-    image: accessories2Image,
-    description: "Functional cargo shorts for men, featuring multiple pockets for added convenience."
+    id: 7,
+    name: "dress3",
+    category: "dress",
+    price: 49.99,
+    image: dress3Image,
+    description: "Elegant floral print dress for women, perfect for any occasion."
+  },
+  {
+    id: 8,
+    name: "dress4",
+    category: "dress",
+    price: 49.99,
+    image: dress4Image,
+    description: "Elegant floral print dress for women, perfect for any occasion."
+  },
+  {
+    id: 9,
+    name: "shirt1",
+    category: "pants",
+    price: 34.99,
+    image: shirt1Image,
+    description: "Stylish skinny jeans for women, providing a flattering fit."
+  },
+  {
+    id: 10,
+    name: "shirt1",
+    category: "shirt",
+    price: 44.99,
+    image: shirt2Image,
+    description: "Trendy plaid shirt for men, perfect for both casual and semi-formal occasions."
   }
 ];
 

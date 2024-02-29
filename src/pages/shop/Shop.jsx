@@ -1,11 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import Product from "./Product";
 import products from "../../products";
 import "./product.css";
 import CartButton from "../../components/CartButton";
+import HomeButton from "../../components/HomeButton";
+
 
 const productsData = products;
 
@@ -19,7 +18,10 @@ export default function Shop() {
 
       {/* <Link to="/mintmade/">Back to Home</Link> */}
       <div className="cart-icon">
-      <CartButton />
+      <CartButton />  
+      </div>
+      <div className="home-icon">
+      <HomeButton/>
       </div>
       <div className="product-container">
         {productsData.map((product) => (

@@ -1,0 +1,146 @@
+@font-face {
+  font-family: Bogart;
+  src: url(/src/assets/fonts/Bogart-Regular-trial.ttf);
+}
+
+@font-face {
+  font-family: Hertical;
+  src: url(/src/assets/fonts/Hertical-Sans.ttf);
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center items vertically */
+  height: 110vh;
+  background-color: #C7B7CD;
+}
+
+.col {
+  flex: 1;
+  padding: 20px;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center items horizontally */
+  text-align: center; /* Center text */
+}
+
+h2 {
+  font-size: 3rem;
+  margin-bottom: 5px;
+  font-family: Bogart;
+}
+
+
+.col h2 {
+  font-size: 4rem;
+}
+
+.smallInfo p {
+  font-size: 1rem;
+  font-family: Bogart;
+}
+
+.bigInfo p {
+  font-size: 2rem;
+  font-family: Hertical;
+}
+
+/* ImageComponent*/
+
+.rowImage{
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center items vertically */
+  height: 120vh;
+  background-color: white;
+}
+
+
+.full-width {
+  width: 50%;
+  height: 120vh; /* Ensures the image scales proportionally */
+}
+
+.text-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%; /* Ensures the text content takes full height of the column */
+}
+
+.text-content h2 {
+  font-size: 3rem;
+  margin-bottom: 1px;
+  font-family: Bogart;
+  color:#49444B;
+}
+
+.text-content p {
+  font-size: 20px;
+ 
+  color:#49444B;
+
+
+}
+
+
+.shop-btn {
+  display: inline-block;
+  color: whitesmoke;
+  background-color: #C7B7CD;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 1rem;
+  border-radius: 5%;
+  cursor: pointer;
+  border: 1px solid white;
+  font-family: CocoGothic-Bold;
+  width:166.6px;
+  height: 20px;
+  font-size: large;
+  
+}
+
+.container {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  height: 1rem; /* Adjust height as needed */
+}
+
+
+/* Footer */
+
+.footer-bg {
+  background-image: url("/src/assets/img/footer.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  
+}
+
+.footer-bg ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 3rem;
+}
+
+ul{
+  padding-top: 10rem;
+  padding-left: 5rem;
+  list-style-type: none;
+  font: bold;
+}
+
+.email{
+  padding-left: 69rem;
+  font-size: 2rem;
+}

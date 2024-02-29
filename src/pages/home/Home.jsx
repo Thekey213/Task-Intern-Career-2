@@ -1,6 +1,12 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import "./home.css";
+import HomeInfo from "../../components/HomeInfo";
+import ImageTextComponent from "../../components/ImageTextComponent";
+import HimComponent from "../../components/HimComponent";
+import Footer from "../../components/Footer";
+
+
  
 
 
@@ -15,7 +21,12 @@ export default function Home(){
             </div>
           
           </section>
-    
+          <HomeInfo/>
+          <ImageTextComponent/>
+          <HimComponent/>
+          <Footer/>
+      
+      
         
         </>
       );
