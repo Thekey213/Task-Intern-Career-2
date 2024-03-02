@@ -112,17 +112,6 @@
 
 
   
-  /*About*/
-    .about-bg{
-  
-    background-color: #FF66C4;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    height: 120vh;
-  
-    }
   
     p{
       font-family: CocoGothic-Bold;
@@ -152,7 +141,7 @@
    }
    
    .companyName {
-    left: 20px;
+    left: 20px; 
        top: 20px;
        font-size: 17px;
       

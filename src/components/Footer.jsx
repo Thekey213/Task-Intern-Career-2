@@ -5,7 +5,7 @@ const Footer = () => {
 
     return (
         <footer className="footer-bg"> 
-         
+            <div className="companyName">MINTMADE</div>
             <h2 className="email">mintmade@gmail.com</h2>
             <ul>
                 <li><a href="#"><FaFacebook /> Facebook</a></li>
@@ -13,7 +13,7 @@ const Footer = () => {
                 <li><a href="#"><FaTwitter /> Twitter</a></li>
             </ul>
 
-            <div className="companyName">MINTMADE</div>
+            
 
         </footer>
     );

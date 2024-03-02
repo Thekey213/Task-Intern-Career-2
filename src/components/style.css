@@ -8,6 +8,30 @@
   src: url(/src/assets/fonts/Hertical-Sans.ttf);
 }
 
+
+
+/* Center the loading screen vertically and horizontally */
+.loading-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Set the height to cover the entire viewport */
+}
+
+/* Style the loading text */
+.loading-screen h2 {
+  margin-bottom: 20px; 
+  font-size: 24px;
+  color:#333;
+}
+
+/* Style the DotLoader spinner */
+.react-spinner-loader {
+  margin-top: 20px; /* Add some space above the spinner */
+}
+
+
 .row {
   display: flex;
   justify-content: center;
@@ -122,7 +146,7 @@ h2 {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  height: 100vh;
+  height: 120vh;
   width: 100%;
   
 }
@@ -141,6 +165,8 @@ ul{
 }
 
 .email{
-  padding-left: 69rem;
+  padding-left: 60rem;
   font-size: 2rem;
 }
+
+
