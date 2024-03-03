@@ -1,46 +1,43 @@
 @font-face {
   font-family: Bogart;
   src: url(/src/assets/fonts/Bogart-Regular-trial.ttf);
-}
-
-@font-face {
+ }
+ 
+ @font-face {
   font-family: Hertical;
   src: url(/src/assets/fonts/Hertical-Sans.ttf);
-}
-
-
-
-/* Center the loading screen vertically and horizontally */
-.loading-screen {
+ }
+ 
+ /* Center the loading screen vertically and horizontally */
+ .loading-screen {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh; /* Set the height to cover the entire viewport */
-}
-
-/* Style the loading text */
-.loading-screen h2 {
+ }
+ 
+ /* Style the loading text */
+ .loading-screen h2 {
   margin-bottom: 20px; 
   font-size: 24px;
   color:#333;
-}
-
-/* Style the DotLoader spinner */
-.react-spinner-loader {
+ }
+ 
+ /* Style the DotLoader spinner */
+ .react-spinner-loader {
   margin-top: 20px; /* Add some space above the spinner */
-}
-
-
-.row {
+ }
+ 
+ .row {
   display: flex;
   justify-content: center;
   align-items: center; /* Center items vertically */
   height: 110vh;
   background-color: #C7B7CD;
-}
-
-.col {
+ }
+ 
+ .col {
   flex: 1;
   padding: 20px;
   margin: 0 10px;
@@ -48,70 +45,63 @@
   flex-direction: column;
   justify-content: center; /* Center items horizontally */
   text-align: center; /* Center text */
-}
-
-h2 {
+ }
+ 
+ h2 {
   font-size: 3rem;
   margin-bottom: 5px;
   font-family: Bogart;
-}
-
-
-.col h2 {
+ }
+ 
+ .col h2 {
   font-size: 4rem;
-}
-
-.smallInfo p {
+ }
+ 
+ .smallInfo p {
   font-size: 1rem;
   font-family: Bogart;
-}
-
-.bigInfo p {
+ }
+ 
+ .bigInfo p {
   font-size: 2rem;
   font-family: Hertical;
-}
-
-/* ImageComponent*/
-
-.rowImage{
+ }
+ 
+ /* ImageComponent*/
+ .rowImage{
   display: flex;
   justify-content: center;
   align-items: center; /* Center items vertically */
   height: 120vh;
   background-color: white;
-}
-
-
-.full-width {
+ }
+ 
+ .full-width {
   width: 50%;
   height: 120vh; /* Ensures the image scales proportionally */
-}
-
-.text-content {
+ }
+ 
+ .text-content {
   padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100%; /* Ensures the text content takes full height of the column */
-}
-
-.text-content h2 {
+ }
+ 
+ .text-content h2 {
   font-size: 3rem;
   margin-bottom: 1px;
   font-family: Bogart;
   color:#49444B;
-}
-
-.text-content p {
-  font-size: 20px;
+ }
  
+ .text-content p {
+  font-size: 20px;
   color:#49444B;
-
-
-}
-
-
-.shop-btn {
+ }
+ 
+ .shop-btn {
   display: inline-block;
   color: whitesmoke;
   background-color: #C7B7CD;
@@ -127,20 +117,17 @@ h2 {
   width:166.6px;
   height: 20px;
   font-size: large;
-  
-}
-
-.container {
+ }
+ 
+ .container {
   display: flex;
   justify-content: center; /* Center items horizontally */
   align-items: center; /* Center items vertically */
   height: 1rem; /* Adjust height as needed */
-}
-
-
-/* Footer */
-
-.footer-bg {
+ }
+ 
+ /* Footer */
+ .footer-bg {
   background-image: url("/src/assets/img/footer.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -148,25 +135,109 @@ h2 {
   position: relative;
   height: 120vh;
   width: 100%;
-  
-}
-
-.footer-bg ul li a {
+ }
+ 
+ .footer-bg ul li a {
   text-decoration: none;
   color: white;
   font-size: 3rem;
-}
-
-ul{
+ }
+ 
+ ul{
   padding-top: 10rem;
   padding-left: 5rem;
   list-style-type: none;
   font: bold;
-}
-
-.email{
+ }
+ 
+ .email{
   padding-left: 60rem;
   font-size: 2rem;
-}
+ }
+ 
+ /* Responsive adjustments for screens with a maximum width of 768 pixels (typical breakpoint for tablets) */
+ @media (max-width: 768px) {
+  .row, .rowImage, .footer-bg {
+     height: auto; /* Adjust height as needed */
+  }
+ 
+  h2, .col h2, .text-content h2 {
+     font-size: 2rem; /* Reduce font size */
+  }
+ 
+  .smallInfo p, .text-content p {
+     font-size: 1rem; /* Reduce font size */
+  }
+ 
+  .shop-btn {
+     width: 100%; /* Make the button full width on smaller screens */
+     padding: 0.5rem 1rem; /* Adjust padding for smaller screens */
+  }
+ 
+  .container {
+     height: auto; /* Adjust height as needed */
+  }
+ 
+  .email {
+     padding-left: 10rem; /* Adjust padding for smaller screens */
+  }
+ }
+ 
+ /* Responsive adjustments for screens with a maximum width of 480 pixels (typical breakpoint for mobile phones) */
+ @media (max-width: 480px) {
+  h2, .col h2, .text-content h2 {
+     font-size: 1.5rem; /* Further reduce font size */
+  }
+ 
+  .smallInfo p, .text-content p {
+     font-size: 0.3rem; /* Further reduce font size */
+  }
+ 
+  .shop-btn {
+     padding: 0.5rem; /* Adjust padding for smaller screens */
+     font-size: 12px;
+  }
+ 
+  .email {
+     padding-left: 1.3rem;
+     font-size:1rem;
+     color:#333;
+  }
 
 
+  .row {
+    display: none; 
+  }
+
+  .rowImage{
+    height: 60vh;
+   }
+
+   .full-width {
+    width: 50%;
+    height: 60vh; /* Ensures the image scales proportionally */
+   }
+  
+
+   .footer-bg {
+   height: 100vh;
+     width: 100%;
+   }
+
+   footer .companyName {
+       color: #333;
+   }
+ 
+   .footer-bg ul li a {
+    font-size: 1.5rem;
+   }
+
+   ul{
+    padding-left: 2rem;
+
+   }
+  
+
+   
+ }
+ 
