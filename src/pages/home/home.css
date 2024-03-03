@@ -112,17 +112,6 @@
 
 
   
-  /*About*/
-    .about-bg{
-  
-    background-color: #FF66C4;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    height: 120vh;
-  
-    }
   
     p{
       font-family: CocoGothic-Bold;
@@ -133,35 +122,47 @@
       margin-right: 4rem;
     }
   
-  /*Responsive,  adjusting screens*/
-    @media (max-width: 600px) {
-      
-      h1 {
-     font-size: 2rem;
-     margin-bottom: 14rem;
-     margin-top: 10rem
-   }
-  
-   h2{
-     margin-top: 2rem;
-     
-   }
-  
-   .hero-text{
-    width: 350px;
-   }
-   
-   .companyName {
-    left: 20px;
-       top: 20px;
-       font-size: 17px;
-      
-   }
-     
-  
-   
-  }
-  
 
- 
-  
+   /* Responsive adjustments for screens with a maximum width of 600 pixels */
+@media (max-width: 600px) {
+  .hero-bg {
+      height: 80vh; 
+  }
+
+  .hero-text {
+      width: 90%; 
+      font-size: 1rem; 
+  }
+
+  .companyName {
+      left: 10px; 
+      top: 10px; 
+      font-size: 14px; 
+      
+  }
+
+  h1 {
+      font-size: 3rem; 
+      margin-top: 10rem; 
+      margin-bottom: 8rem; 
+
+  h2 {
+      font-size: 1.5rem; 
+      padding-bottom: 1.5rem; 
+      padding-top: 2rem; 
+  }
+
+  p {
+      font-size: 0.9rem;
+      margin-right: 2rem; 
+  }
+
+  .hero-btn {
+      width: 140px; 
+      height: 32px; 
+      font-size: 0.9rem; 
+      padding-top: 1rem; 
+      margin-top: 0.5rem; /* Adjusting the top margin of the hero button */
+  }
+}
+}
