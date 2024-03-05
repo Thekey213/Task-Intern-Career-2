@@ -6,7 +6,7 @@ import { faHome } from '@fortawesome/free-solid-svg-icons';
 const HomeButton = () => {
   return (
     <Link
-      to="/"
+      to="/home"
       style={{
         textDecoration: "none",
         fontWeight: "bold",

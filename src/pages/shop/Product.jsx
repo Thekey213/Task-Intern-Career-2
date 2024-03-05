@@ -16,7 +16,7 @@ const Product = ({ product }) => {
       <img src={product.image} alt={product.name} />
       <div className="product-info">
         <p>{product.description}</p>
-        <h3>R{product.price}</h3>
+        <h3>${product.price}</h3>
         <button onClick={() => addToCart(product)}>
           Add to Cart {itemCount > 0 && `(${itemCount})`}
         </button>
