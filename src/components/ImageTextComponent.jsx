@@ -12,7 +12,7 @@ const ImageTextComponent = () => {
             <div className="col">
                 <div className="text-content">
                     <h2>Clothes <br/> for Her</h2>
-                    <div class="container">
+                    <div >
                     <Link  className="shop-btn" to="/shop">SHOP NOW</Link> 
                     
                     </div>

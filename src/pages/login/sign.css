@@ -1,49 +1,270 @@
-.form-container {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+/* Common styles for both sign-up and login */
+.sign-up {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 4rem;
+}
+
+.sign-up h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.sign-up form {
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-up form div {
+  margin-bottom: 15px;
+}
+
+.sign-up form label {
+  margin-bottom: 5px;
+}
+
+.sign-up form input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.sign-up form button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sign-up form button:hover {
+  background-color: #0056b3;
+}
+
+.sign-up p {
+  color: red;
+  margin-top: 10px;
+}
+
+
+@media (max-width: 600px) {
+  .sign-up {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .sign-up {
+    width: 90%;
+    border: 0px;
   }
   
-  .form-container h3 {
-    margin-bottom: 20px;
+}
+
+.login {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 4rem;
+}
+
+.login h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login form div {
+  margin-bottom: 15px;
+}
+
+.login form label {
+  margin-bottom: 5px;
+}
+
+.login form input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.login form button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login form button:hover {
+  background-color: #0056b3;
+}
+
+.login p {
+  color: red;
+  margin-top: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .login {
+    width: 80%;
   }
-  
-  .form-container .form-group {
-    margin-bottom: 15px;
+}
+
+@media (max-width: 480px) {
+  .login {
+    width: 90%;
   }
-  
-  .form-container .form-group label {
-    display: block;
-    margin-bottom: 5px;
+}
+/* Common styles for both sign-up and login */
+.login {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 4rem;
+}
+
+.login h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login form div {
+  margin-bottom: 15px;
+}
+
+.login form label {
+  margin-bottom: 5px;
+}
+
+.login form input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.login form button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login form button:hover {
+  background-color: #0056b3;
+}
+
+.login p {
+  color: red;
+  margin-top: 10px;
+}
+
+
+@media (max-width: 600px) {
+  .login {
+    width: 80%;
   }
-  
-  .form-container .form-control {
-    width: 100%;
-    padding: 8px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+}
+
+@media (max-width: 480px) {
+  .login {
+    width: 90%;
   }
-  
-  .form-container .btn-primary {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+}
+
+
+/* login */
+.login {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 4rem;
+}
+
+.login h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login form div {
+  margin-bottom: 15px;
+}
+
+.login form label {
+  margin-bottom: 5px;
+}
+
+.login form input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.login form button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login form button:hover {
+  background-color: #0056b3;
+}
+
+.login p {
+  color: red;
+  margin-top: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .login {
+    width: 80%;
   }
-  
-  .form-container .btn-primary:hover {
-    background-color: #0056b3;
+}
+
+@media (max-width: 480px) {
+  .login {
+    width: 90%;
   }
-  
-  .alert {
-    margin-top: 10px;
-  }
-  
+}
+
+ 
