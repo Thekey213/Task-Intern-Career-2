@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Thekey213.github.io/mintmade/",
+  "homepage": "https://Thekey213.github.io/Task-Intern-Career-2/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

@@ -20,7 +20,7 @@ const App = () => {
   }, []);
 
   return (
-    <BrowserRouter basename="/mintmade">
+    <BrowserRouter basename="/Task-Intern-Career-2">
       <ProductProvider>
         {loading ? (
           <LoadingScreen />
